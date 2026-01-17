@@ -1317,47 +1317,57 @@
 
         /* Process Section - Interactive Stepper */
         .process {
-            padding: var(--spacing-lg) 0;
-            background: #f5f9fc;
+            padding: var(--spacing-xl) 0;
+            background: linear-gradient(135deg, #f0f7ff 0%, #f7fbff 45%, #eef7fb 100%);
+            min-height: 100vh;
         }
 
         .process .container {
-            max-width: 1320px;
+            max-width: 1480px;
         }
 
         .process-interactive {
-            margin-top: var(--spacing-lg);
+            margin-top: var(--spacing-xl);
             display: grid;
-            gap: var(--spacing-md);
+            gap: var(--spacing-lg);
             position: relative;
             z-index: 1;
+            grid-template-columns: minmax(260px, 360px) minmax(0, 1fr);
+            grid-template-areas:
+                "tabs panels"
+                "progress panels"
+                "timer panels";
+            align-items: start;
+            column-gap: var(--spacing-xl);
+            row-gap: var(--spacing-md);
         }
 
         .process-tablist {
-            display: grid;
-            grid-template-columns: repeat(5, minmax(0, 1fr));
+            grid-area: tabs;
+            display: flex;
+            flex-direction: column;
             gap: var(--spacing-md);
-            max-width: 1240px;
-            margin: 0 auto;
+            max-width: none;
+            margin: 0;
         }
 
         .process-tab {
             appearance: none;
             border: 1px solid #d9e6f1;
             background: #ffffff;
-            border-radius: var(--radius-md);
-            padding: 1.05rem 1.3rem;
+            border-radius: var(--radius-lg);
+            padding: 1.4rem 1.7rem;
             display: grid;
             grid-template-columns: auto 1fr auto;
             align-items: center;
-            gap: 0.6rem;
+            gap: 0.75rem;
             text-align: left;
             cursor: pointer;
             transition: var(--transition-base);
             position: relative;
             overflow: hidden;
             color: var(--dark);
-            box-shadow: 0 6px 14px rgba(15, 23, 42, 0.05);
+            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
         }
 
         .process-tab::after {
@@ -1382,7 +1392,7 @@
 
         .process-tab:hover {
             transform: translateY(-1px);
-            box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
+            box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
         }
 
         .process-tab.active {
@@ -1399,7 +1409,7 @@
         }
 
         .process-tab .tab-step {
-            font-size: 0.7rem;
+            font-size: 0.75rem;
             letter-spacing: 0.18em;
             font-weight: 700;
             opacity: 0.65;
@@ -1407,14 +1417,14 @@
         }
 
         .process-tab .tab-title {
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 600;
         }
 
         .process-tab .tab-icon {
-            width: 44px;
-            height: 44px;
-            border-radius: 14px;
+            width: 52px;
+            height: 52px;
+            border-radius: 16px;
             background: rgba(15, 23, 42, 0.06);
             display: inline-flex;
             align-items: center;
@@ -1428,8 +1438,8 @@
         }
 
         .process-tab .tab-icon .icon {
-            width: 20px;
-            height: 20px;
+            width: 24px;
+            height: 24px;
         }
 
         .process-tab .tab-badge {
@@ -1464,13 +1474,14 @@
         }
 
         .process-progress {
+            grid-area: progress;
             height: 4px;
             background: rgba(15, 23, 42, 0.08);
             border-radius: 999px;
             overflow: hidden;
             position: relative;
-            max-width: 1240px;
-            margin: 0 auto;
+            max-width: none;
+            margin: 0;
         }
 
         .process-progress-bar {
@@ -1482,14 +1493,15 @@
         }
 
         .process-timer {
+            grid-area: timer;
             height: 3px;
             background: rgba(15, 23, 42, 0.06);
             border-radius: 999px;
             overflow: hidden;
             margin-top: 0.35rem;
-            max-width: 1240px;
-            margin-left: auto;
-            margin-right: auto;
+            max-width: none;
+            margin-left: 0;
+            margin-right: 0;
         }
 
         .process-timer-bar {
@@ -1502,16 +1514,18 @@
 
         .process-panels {
             position: relative;
-            max-width: 1240px;
-            margin: 0 auto;
+            grid-area: panels;
+            max-width: none;
+            margin: 0;
         }
 
         .process-panel {
-            background: #ffffff;
+            background: linear-gradient(135deg, #ffffff 0%, #f6fbff 100%);
             border-radius: var(--radius-lg);
-            padding: 2.6rem 3rem;
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 18px 32px rgba(15, 23, 42, 0.08);
+            padding: 3rem 3.6rem;
+            border: 1px solid #d8e4f2;
+            box-shadow: 0 24px 48px rgba(15, 23, 42, 0.12);
+            width: 100%;
         }
 
         .process-panel[hidden] {
@@ -1541,20 +1555,20 @@
         }
 
         .panel-icon {
-            width: 56px;
-            height: 56px;
-            border-radius: 16px;
+            width: 68px;
+            height: 68px;
+            border-radius: 18px;
             background: #0f172a;
             color: #ffffff;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 10px 18px rgba(15, 23, 42, 0.2);
+            box-shadow: 0 14px 22px rgba(15, 23, 42, 0.25);
         }
 
         .panel-icon .icon {
-            width: 28px;
-            height: 28px;
+            width: 32px;
+            height: 32px;
         }
 
         .panel-meta {
@@ -1572,7 +1586,7 @@
         }
 
         .panel-title {
-            font-size: 1.5rem;
+            font-size: 1.75rem;
             font-weight: 700;
             color: var(--dark);
             margin: 0;
@@ -1594,7 +1608,7 @@
             color: var(--gray);
             margin: 0 0 var(--spacing-sm);
             line-height: 1.6;
-            font-size: 1rem;
+            font-size: 1.05rem;
         }
 
         .process-interactive .process-features {
@@ -1610,7 +1624,7 @@
             position: relative;
             padding-left: 1.2rem;
             color: var(--dark-light);
-            font-size: 1rem;
+            font-size: 1.05rem;
         }
 
         .process-interactive .process-features li::before {
@@ -1622,14 +1636,14 @@
         }
 
         .process-note {
-            max-width: 980px;
+            max-width: 1200px;
             margin: var(--spacing-md) auto 0;
             text-align: center;
-            padding: 2rem;
-            background: #ffffff;
+            padding: 2.4rem;
+            background: linear-gradient(135deg, #ffffff 0%, #f1f7ff 100%);
             border-radius: var(--radius-md);
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 12px 24px rgba(15, 23, 42, 0.06);
+            border: 1px solid #d8e4f2;
+            box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
         }
 
         .note-icon {
@@ -1651,8 +1665,13 @@
         }
 
         @media (max-width: 1024px) {
-            .process-tablist {
-                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            .process-interactive {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "tabs"
+                    "progress"
+                    "timer"
+                    "panels";
             }
         }
 
@@ -1663,6 +1682,7 @@
                 gap: var(--spacing-sm);
                 padding-bottom: 0.5rem;
                 scroll-snap-type: x mandatory;
+                flex-direction: row;
             }
 
             .process-tab {
@@ -1671,7 +1691,7 @@
             }
 
             .process-panel {
-                padding: 1.25rem;
+                padding: 1.6rem;
             }
 
             .process-interactive .process-features {
