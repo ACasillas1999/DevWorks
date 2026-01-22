@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <!-- Microsoft Clarity -->
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
@@ -19,7 +19,7 @@
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "v1yt0cgxo8");
     </script>
-    
+
     <style>
         * {
             margin: 0;
@@ -28,31 +28,36 @@
         }
 
         :root {
-            --primary: #0f172a;
-            --primary-dark: #020617;
-            --primary-light: #1e293b;
-            --secondary: #0891b2;
+            --primary: #38bdf8;
+            --primary-dark: #0b1120;
+            --primary-light: #7dd3fc;
+            --secondary: #22d3ee;
             --accent: #06b6d4;
-            --accent-light: #22d3ee;
-            --dark: #0f172a;
-            --dark-light: #1e293b;
-            --gray: #64748b;
-            --gray-light: #cbd5e1;
-            --white: #ffffff;
-            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #0891b2 100%);
-            --bg-gradient-alt: linear-gradient(120deg, #0891b2 0%, #06b6d4 50%, #0f172a 100%);
+            --accent-light: #67e8f9;
+            --dark: #e2e8f0;
+            --dark-light: #cbd5e1;
+            --gray: #94a3b8;
+            --gray-light: #a8b3c5;
+            --white: #f8fafc;
+            --surface-1: #0b1120;
+            --surface-2: #0f172a;
+            --surface-3: #111827;
+            --surface-4: #0b1a2a;
+            --bg-gradient: linear-gradient(135deg, #0b1120 0%, #0f172a 45%, #0891b2 100%);
+            --bg-gradient-alt: linear-gradient(120deg, #0f172a 0%, #0b2536 50%, #0b1120 100%);
+            --text-gradient: linear-gradient(120deg, #7dd3fc 0%, #22d3ee 50%, #38bdf8 100%);
             --spacing-xs: 0.5rem;
             --spacing-sm: 1rem;
             --spacing-md: 2rem;
             --spacing-lg: 4rem;
             --spacing-xl: 6rem;
             --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-            --shadow-glow: 0 0 30px rgba(8, 145, 178, 0.4);
-            --shadow-glow-strong: 0 0 40px rgba(6, 182, 212, 0.5);
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+            --shadow-md: 0 6px 12px -2px rgba(0, 0, 0, 0.5);
+            --shadow-lg: 0 16px 30px -8px rgba(0, 0, 0, 0.6);
+            --shadow-xl: 0 26px 50px -12px rgba(0, 0, 0, 0.7);
+            --shadow-glow: 0 0 30px rgba(56, 189, 248, 0.25);
+            --shadow-glow-strong: 0 0 45px rgba(34, 211, 238, 0.35);
             --radius-sm: 0.5rem;
             --radius-md: 1rem;
             --radius-lg: 1.5rem;
@@ -67,7 +72,7 @@
             padding: 0;
             font-family: var(--font-family);
             color: var(--dark);
-            background: linear-gradient(-45deg, #bae6fd, #7dd3fc, #38bdf8, #0ea5e9);
+            background: linear-gradient(-45deg, #0b1120, #0f172a, #0b2536, #0b1a2a);
             background-size: 400% 400%;
             animation: gradientShift 12s ease infinite;
             position: relative;
@@ -83,9 +88,9 @@
             width: 100%;
             height: 100%;
             background-image:
-                radial-gradient(circle at 20% 50%, rgba(56, 189, 248, 0.2) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(14, 165, 233, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 40% 20%, rgba(125, 211, 252, 0.2) 0%, transparent 50%);
+                radial-gradient(circle at 20% 50%, rgba(56, 189, 248, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(125, 211, 252, 0.12) 0%, transparent 50%);
             pointer-events: none;
             z-index: 0;
             animation: floatParticles 18s ease-in-out infinite;
@@ -98,9 +103,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: 
-                repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.03) 4px),
-                repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.03) 4px);
+            background-image:
+                repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(148, 163, 184, 0.06) 2px, rgba(148, 163, 184, 0.06) 4px),
+                repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(148, 163, 184, 0.06) 2px, rgba(148, 163, 184, 0.06) 4px);
             pointer-events: none;
             z-index: 0;
             opacity: 0.5;
@@ -140,9 +145,9 @@
             left: 0;
             right: 0;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(11, 17, 32, 0.92);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid rgba(148, 163, 184, 0.12);
             transition: var(--transition-base);
         }
 
@@ -256,13 +261,13 @@
             align-items: center;
             position: relative;
             overflow: hidden;
-            background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+            background: linear-gradient(135deg, var(--surface-2) 0%, var(--surface-4) 100%);
         }
 
         .hero-bg {
             position: absolute;
             inset: 0;
-            background-image: url('/20260114_1459_Image Generation_simple_compose_01kez4vvm3eb5vdbmbt34r6d85.png');
+            background-image: url('/darck_hero_.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -273,7 +278,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(8, 145, 178, 0.7) 0%, rgba(6, 182, 212, 0.6) 50%, rgba(15, 23, 42, 0.7) 100%);
+            background: linear-gradient(135deg, rgba(8, 145, 178, 0.35) 0%, rgba(6, 182, 212, 0.25) 50%, rgba(11, 17, 32, 0.85) 100%);
             z-index: 1;
         }
 
@@ -281,15 +286,15 @@
             content: '';
             position: absolute;
             inset: 0;
-            background-image: 
-                radial-gradient(circle at 20% 30%, rgba(6, 182, 212, 0.4) 0%, transparent 2%),
-                radial-gradient(circle at 60% 70%, rgba(56, 189, 248, 0.4) 0%, transparent 2%),
-                radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.4) 0%, transparent 2%),
-                radial-gradient(circle at 30% 80%, rgba(125, 211, 252, 0.4) 0%, transparent 2%),
-                radial-gradient(circle at 90% 60%, rgba(6, 182, 212, 0.4) 0%, transparent 2%),
-                radial-gradient(circle at 10% 50%, rgba(56, 189, 248, 0.4) 0%, transparent 2%),
-                radial-gradient(circle at 50% 40%, rgba(14, 165, 233, 0.4) 0%, transparent 2%),
-                radial-gradient(circle at 70% 90%, rgba(125, 211, 252, 0.4) 0%, transparent 2%);
+            background-image:
+                radial-gradient(circle at 20% 30%, rgba(6, 182, 212, 0.25) 0%, transparent 2%),
+                radial-gradient(circle at 60% 70%, rgba(56, 189, 248, 0.25) 0%, transparent 2%),
+                radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.25) 0%, transparent 2%),
+                radial-gradient(circle at 30% 80%, rgba(125, 211, 252, 0.25) 0%, transparent 2%),
+                radial-gradient(circle at 90% 60%, rgba(6, 182, 212, 0.25) 0%, transparent 2%),
+                radial-gradient(circle at 10% 50%, rgba(56, 189, 248, 0.25) 0%, transparent 2%),
+                radial-gradient(circle at 50% 40%, rgba(14, 165, 233, 0.25) 0%, transparent 2%),
+                radial-gradient(circle at 70% 90%, rgba(125, 211, 252, 0.25) 0%, transparent 2%);
             background-size: 100% 100%;
             z-index: 2;
             animation: particlesFloat 15s ease-in-out infinite;
@@ -366,7 +371,7 @@
             right: -20%;
             width: 800px;
             height: 800px;
-            background: radial-gradient(circle, rgba(8, 145, 178, 0.15) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(8, 145, 178, 0.2) 0%, transparent 70%);
             border-radius: 50%;
             animation: floatSlow 20s ease-in-out infinite;
         }
@@ -378,7 +383,7 @@
             left: -10%;
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(6, 182, 212, 0.12) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(6, 182, 212, 0.18) 0%, transparent 70%);
             border-radius: 50%;
             animation: floatSlow 15s ease-in-out infinite reverse;
         }
@@ -533,7 +538,7 @@
         .stat-number {
             font-size: 2.5rem;
             font-weight: 800;
-            background: var(--bg-gradient);
+            background: var(--text-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -595,7 +600,7 @@
         }
         .services {
             padding: var(--spacing-xl) 0;
-            background: #f8fafc;
+            background: var(--surface-2);
             position: relative;
             overflow: hidden;
             z-index: 1;
@@ -658,7 +663,7 @@
             font-size: 3rem;
             font-weight: 800;
             margin-bottom: var(--spacing-sm);
-            background: var(--bg-gradient);
+            background: var(--text-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -689,7 +694,7 @@
             right: -20%;
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, transparent 70%);
             border-radius: 50%;
         }
 
@@ -763,13 +768,13 @@
         }
 
         .featured-cta {
-            background: var(--white);
-            color: var(--secondary);
+            background: var(--surface-2);
+            color: var(--accent-light);
             padding: 1rem 2rem;
             border-radius: var(--radius-md);
             font-weight: 700;
             font-size: 1.125rem;
-            border: none;
+            border: 1px solid rgba(34, 211, 238, 0.4);
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: var(--shadow-md);
@@ -793,18 +798,18 @@
         }
 
         .cta-content {
-            max-width: 450px;
+            max-width: 720px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(15, 23, 42, 0.92);
             padding: var(--spacing-md);
             border-radius: var(--radius-lg);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
             position: relative;
             z-index: 1;
         }
 
         .service-card {
-            background: var(--white);
+            background: var(--surface-3);
             padding: var(--spacing-md);
             border-radius: var(--radius-lg);
             border: 1px solid rgba(8, 145, 178, 0.15);
@@ -998,7 +1003,7 @@
 
         .process {
             padding: var(--spacing-xl) 0;
-            background: #fafafa;
+            background: var(--surface-2);
             position: relative;
             z-index: 1;
             overflow: hidden;
@@ -1079,11 +1084,11 @@
             box-shadow: var(--shadow-lg), var(--shadow-glow);
             position: relative;
             z-index: 1;
-            border: 4px solid var(--white);
+            border: 4px solid var(--surface-2);
         }
 
         .timeline-content {
-            background: var(--white);
+            background: var(--surface-3);
             padding: var(--spacing-md);
             border-radius: var(--radius-md);
             box-shadow: var(--shadow-md);
@@ -1135,7 +1140,7 @@
         }
 
         .process-card {
-            background: var(--white);
+            background: var(--surface-3);
             padding: var(--spacing-lg);
             border-radius: var(--radius-lg);
             border: 2px solid rgba(8, 145, 178, 0.1);
@@ -1158,7 +1163,7 @@
             height: 24px;
             background: var(--bg-gradient);
             border-radius: 50%;
-            border: 4px solid var(--white);
+            border: 4px solid var(--surface-2);
             box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.2);
             z-index: 1;
             transform: translateY(-50%);
@@ -1201,7 +1206,7 @@
         }
 
         .process-highlight {
-            background: linear-gradient(135deg, rgba(8, 145, 178, 0.05) 0%, rgba(6, 182, 212, 0.05) 100%);
+            background: linear-gradient(135deg, rgba(8, 145, 178, 0.18) 0%, rgba(6, 182, 212, 0.12) 100%);
             border-color: var(--secondary);
             box-shadow: var(--shadow-lg);
         }
@@ -1318,7 +1323,7 @@
         /* Process Section - Interactive Stepper */
         .process {
             padding: var(--spacing-xl) 0;
-            background: linear-gradient(135deg, #f0f7ff 0%, #f7fbff 45%, #eef7fb 100%);
+            background: linear-gradient(135deg, var(--surface-2) 0%, var(--surface-4) 100%);
             min-height: 100vh;
         }
 
@@ -1353,8 +1358,8 @@
 
         .process-tab {
             appearance: none;
-            border: 1px solid #d9e6f1;
-            background: #ffffff;
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            background: var(--surface-3);
             border-radius: var(--radius-lg);
             padding: 1.4rem 1.7rem;
             display: grid;
@@ -1367,14 +1372,14 @@
             position: relative;
             overflow: hidden;
             color: var(--dark);
-            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
         }
 
         .process-tab::after {
             content: '';
             position: absolute;
             inset: 0;
-            background: rgba(8, 145, 178, 0.06);
+            background: rgba(8, 145, 178, 0.12);
             opacity: 0;
             transition: opacity 0.3s ease;
             pointer-events: none;
@@ -1392,14 +1397,14 @@
 
         .process-tab:hover {
             transform: translateY(-1px);
-            box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
+            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.55);
         }
 
         .process-tab.active {
-            background: #0f172a;
+            background: var(--surface-2);
             color: var(--white);
-            border-color: #0f172a;
-            box-shadow: 0 14px 28px rgba(15, 23, 42, 0.18);
+            border-color: rgba(34, 211, 238, 0.6);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.55);
             transform: translateY(-2px);
         }
 
@@ -1425,15 +1430,15 @@
             width: 52px;
             height: 52px;
             border-radius: 16px;
-            background: rgba(15, 23, 42, 0.06);
+            background: rgba(148, 163, 184, 0.12);
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            color: #0f172a;
+            color: var(--dark);
         }
 
         .process-tab.active .tab-icon {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.15);
             color: #ffffff;
         }
 
@@ -1446,9 +1451,9 @@
             position: absolute;
             top: 0.65rem;
             right: 0.8rem;
-            background: rgba(8, 145, 178, 0.12);
+            background: rgba(8, 145, 178, 0.2);
             color: var(--secondary);
-            border: 1px solid rgba(8, 145, 178, 0.2);
+            border: 1px solid rgba(8, 145, 178, 0.35);
             padding: 0.2rem 0.55rem;
             border-radius: 999px;
             font-size: 0.65rem;
@@ -1458,9 +1463,9 @@
         }
 
         .process-tab.active .tab-badge {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.15);
             color: #ffffff;
-            border-color: rgba(255, 255, 255, 0.35);
+            border-color: rgba(255, 255, 255, 0.3);
         }
 
         .icon {
@@ -1476,7 +1481,7 @@
         .process-progress {
             grid-area: progress;
             height: 4px;
-            background: rgba(15, 23, 42, 0.08);
+            background: rgba(148, 163, 184, 0.18);
             border-radius: 999px;
             overflow: hidden;
             position: relative;
@@ -1487,7 +1492,7 @@
         .process-progress-bar {
             height: 100%;
             width: 0;
-            background: #0f172a;
+            background: var(--secondary);
             border-radius: inherit;
             transition: width 0.3s ease;
         }
@@ -1495,7 +1500,7 @@
         .process-timer {
             grid-area: timer;
             height: 3px;
-            background: rgba(15, 23, 42, 0.06);
+            background: rgba(148, 163, 184, 0.12);
             border-radius: 999px;
             overflow: hidden;
             margin-top: 0.35rem;
@@ -1507,7 +1512,7 @@
         .process-timer-bar {
             height: 100%;
             width: 0;
-            background: #0891b2;
+            background: var(--accent);
             border-radius: inherit;
             transition: width 0ms linear;
         }
@@ -1520,11 +1525,11 @@
         }
 
         .process-panel {
-            background: linear-gradient(135deg, #ffffff 0%, #f6fbff 100%);
+            background: linear-gradient(135deg, var(--surface-3) 0%, var(--surface-2) 100%);
             border-radius: var(--radius-lg);
             padding: 3rem 3.6rem;
-            border: 1px solid #d8e4f2;
-            box-shadow: 0 24px 48px rgba(15, 23, 42, 0.12);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.55);
             width: 100%;
         }
 
@@ -1640,10 +1645,10 @@
             margin: var(--spacing-md) auto 0;
             text-align: center;
             padding: 2.4rem;
-            background: linear-gradient(135deg, #ffffff 0%, #f1f7ff 100%);
+            background: linear-gradient(135deg, var(--surface-3) 0%, var(--surface-2) 100%);
             border-radius: var(--radius-md);
-            border: 1px solid #d8e4f2;
-            box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            box-shadow: 0 18px 36px rgba(0, 0, 0, 0.5);
         }
 
         .note-icon {
@@ -1701,7 +1706,7 @@
 
         .benefits {
             padding: var(--spacing-xl) 0;
-            background: var(--white);
+            background: var(--surface-2);
         }
 
         .benefits-grid {
@@ -1752,8 +1757,8 @@
 
         .cta-section {
             padding: var(--spacing-lg) 0;
-            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #bae6fd 100%);
-            color: #0f172a;
+            background: linear-gradient(135deg, #0b1120 0%, #0f172a 55%, #0b2536 100%);
+            color: var(--dark);
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -1766,7 +1771,7 @@
             right: -20%;
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(56, 189, 248, 0.2) 0%, transparent 70%);
             border-radius: 50%;
             animation: floatSlow 20s ease-in-out infinite;
         }
@@ -1778,7 +1783,7 @@
             left: -10%;
             width: 500px;
             height: 500px;
-            background: radial-gradient(circle, rgba(14, 165, 233, 0.12) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(14, 165, 233, 0.18) 0%, transparent 70%);
             border-radius: 50%;
             animation: floatSlow 15s ease-in-out infinite reverse;
         }
@@ -1790,7 +1795,7 @@
             line-height: 1.2;
             position: relative;
             z-index: 1;
-            color: #0f172a;
+            color: var(--dark);
         }
 
         .cta-subtitle {
@@ -1803,7 +1808,7 @@
             line-height: 1.5;
             position: relative;
             z-index: 1;
-            color: #1e293b;
+            color: var(--gray);
         }
 
         .cta-buttons {
@@ -1816,9 +1821,9 @@
         }
 
         .cta-form {
-            display: flex;
-            flex-direction: column;
-            gap: var(--spacing-sm);
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: var(--spacing-sm) var(--spacing-md);
             margin-top: var(--spacing-md);
         }
 
@@ -1828,28 +1833,33 @@
             gap: 0.5rem;
         }
 
+        .cta-form .form-group:last-of-type {
+            grid-column: 1 / -1;
+        }
+
         .form-group label {
             font-weight: 600;
-            color: #0f172a;
+            color: var(--dark);
             font-size: 0.9rem;
         }
 
         .form-group input,
         .form-group textarea {
             padding: 0.65rem 0.9rem;
-            border: 2px solid #e2e8f0;
+            border: 2px solid rgba(148, 163, 184, 0.35);
             border-radius: var(--radius-sm);
             font-size: 0.95rem;
             font-family: var(--font-family);
             transition: var(--transition-base);
-            background: white;
+            background: var(--surface-3);
+            color: var(--dark);
         }
 
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: #38bdf8;
-            box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.1);
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25);
         }
 
         .form-group textarea {
@@ -1858,8 +1868,8 @@
         }
 
         .submit-button {
-            background: #0f172a;
-            color: white;
+            background: var(--bg-gradient);
+            color: var(--white);
             padding: 0.85rem 1.75rem;
             border: none;
             border-radius: var(--radius-sm);
@@ -1868,32 +1878,34 @@
             cursor: pointer;
             transition: var(--transition-base);
             margin-top: var(--spacing-xs);
+            grid-column: 1 / -1;
+            width: 100%;
         }
 
         .submit-button:hover {
-            background: #1e293b;
+            background: #0b2536;
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(15, 23, 42, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
         }
 
         .cta-section .primary-button {
-            background: #0f172a;
+            background: var(--bg-gradient);
             color: var(--white);
         }
 
         .cta-section .secondary-button {
             background: transparent;
-            color: #0f172a;
-            border-color: #0f172a;
+            color: var(--white);
+            border-color: var(--white);
         }
 
         .cta-section .secondary-button:hover {
-            background: #0f172a;
+            background: var(--surface-2);
             color: var(--white);
         }
 
         .footer {
-            background: var(--dark);
+            background: var(--surface-1);
             color: var(--gray-light);
             padding: var(--spacing-lg) 0 var(--spacing-md);
         }
@@ -1947,51 +1959,55 @@
             .hero-title {
                 font-size: 2.5rem;
             }
-            
+
             .hero-subtitle {
                 font-size: 1.125rem;
             }
-            
+
             .hero-stats {
                 flex-direction: column;
                 gap: var(--spacing-sm);
             }
-            
+
             .hero-cta {
                 flex-direction: column;
             }
-            
+
             .nav-links {
                 display: none;
             }
-            
+
             .section-title {
                 font-size: 2rem;
             }
-            
+
             .services-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .footer-content {
                 grid-template-columns: 1fr;
             }
-            
+
             .cta-title {
                 font-size: 2rem;
             }
-            
+
             .cta-buttons {
                 flex-direction: column;
             }
-            
+
+            .cta-form {
+                grid-template-columns: 1fr;
+            }
+
             /* Convert horizontal timeline to vertical on mobile */
             .process-timeline {
                 flex-direction: column;
                 overflow-x: visible;
                 padding: var(--spacing-md) 0;
             }
-            
+
             .process-timeline::before {
                 left: 60px;
                 right: auto;
@@ -2001,14 +2017,14 @@
                 height: auto;
                 background: linear-gradient(180deg, var(--secondary) 0%, var(--accent) 100%);
             }
-            
+
             .timeline-item {
                 min-width: auto;
                 display: flex;
                 gap: var(--spacing-md);
                 align-items: flex-start;
             }
-            
+
             .timeline-number {
                 width: 100px;
                 height: 100px;
@@ -2016,7 +2032,7 @@
                 margin: 0;
                 flex-shrink: 0;
             }
-            
+
             .timeline-content {
                 text-align: left;
                 flex: 1;
@@ -2098,7 +2114,7 @@
                 <h2 class="section-title fade-in-up">Desarrollo de Software y Aplicaciones Web</h2>
                 <p class="section-subtitle fade-in-up delay-1">Desarrollamos aplicaciones web a la medida, fusionando estrategia, diseño, tecnología y experiencia de usuario.</p>
             </div>
-            
+
             <!-- Featured Hero Card -->
             <div class="featured-hero">
                 <div class="featured-content">
@@ -2348,7 +2364,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="process-note">
                 <strong>
                     <span class="note-icon" aria-hidden="true">
@@ -2378,7 +2394,7 @@
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="table">
                     <input type="text" name="_honey" style="display:none">
-                    
+
                     <div class="form-group">
                         <label for="name">Nombre completo *</label>
                         <input type="text" id="name" name="name" required placeholder="Tu nombre">
@@ -2433,7 +2449,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; {{ date('Y') }} Devlopolis. Todos los derechos reservados.</p>
+                <p>2026 Devlopolis. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
@@ -2445,7 +2461,7 @@
             const start = 0;
             const increment = target / (duration / 16); // 60fps
             let current = start;
-            
+
             const timer = setInterval(() => {
                 current += increment;
                 if (current >= target) {
@@ -2478,12 +2494,12 @@
             // Create tech particles with connections
             const particlesContainer = document.querySelector('.particles-container');
             const canvas = document.getElementById('particlesCanvas');
-            
+
             if (particlesContainer && canvas) {
                 const ctx = canvas.getContext('2d');
                 const particles = [];
                 const maxDistance = 150; // Maximum distance for connections
-                
+
                 // Set canvas size
                 function resizeCanvas() {
                     canvas.width = particlesContainer.offsetWidth;
@@ -2491,37 +2507,37 @@
                 }
                 resizeCanvas();
                 window.addEventListener('resize', resizeCanvas);
-                
+
                 function createParticle() {
                     const particle = document.createElement('div');
                     particle.className = 'particle';
-                    
+
                     // Random starting position (anywhere on screen)
                     const startX = Math.random() * 100;
                     const startY = Math.random() * 100;
                     particle.style.left = startX + '%';
                     particle.style.top = startY + '%';
                     particle.style.bottom = 'auto';
-                    
+
                     // Random movement direction
                     const angle = Math.random() * Math.PI * 2;
                     const distance = 200 + Math.random() * 300;
                     const moveX = Math.cos(angle) * distance;
                     const moveY = Math.sin(angle) * distance;
-                    
+
                     particle.style.setProperty('--tx', moveX + 'px');
                     particle.style.setProperty('--ty', moveY + 'px');
-                    
+
                     // Slower duration between 15-25 seconds
                     const duration = 15 + Math.random() * 10;
                     particle.style.animationDuration = duration + 's';
-                    
+
                     // Random delay
                     const delay = Math.random() * 3;
                     particle.style.animationDelay = delay + 's';
-                    
+
                     particlesContainer.appendChild(particle);
-                    
+
                     // Track particle data
                     const particleData = {
                         element: particle,
@@ -2534,7 +2550,7 @@
                         startTime: Date.now()
                     };
                     particles.push(particleData);
-                    
+
                     // Remove particle after animation
                     setTimeout(() => {
                         particle.remove();
@@ -2542,34 +2558,34 @@
                         if (index > -1) particles.splice(index, 1);
                     }, (duration + delay) * 1000);
                 }
-                
+
                 // Draw connections between particles
                 function drawConnections() {
                     ctx.clearRect(0, 0, canvas.width, canvas.height);
                     const now = Date.now();
-                    
+
                     // Calculate current positions
                     const positions = particles.map(p => {
                         const elapsed = now - p.startTime - p.delay;
                         if (elapsed < 0) return null;
-                        
+
                         const progress = Math.min(elapsed / p.duration, 1);
                         const x = p.startX + (p.moveX * progress);
                         const y = p.startY + (p.moveY * progress);
-                        
+
                         return { x, y, opacity: progress > 0.1 && progress < 0.9 ? 1 : 0 };
                     }).filter(p => p !== null);
-                    
+
                     // Draw lines between nearby particles
                     ctx.strokeStyle = 'rgba(6, 182, 212, 0.3)';
                     ctx.lineWidth = 1;
-                    
+
                     for (let i = 0; i < positions.length; i++) {
                         for (let j = i + 1; j < positions.length; j++) {
                             const dx = positions[i].x - positions[j].x;
                             const dy = positions[i].y - positions[j].y;
                             const distance = Math.sqrt(dx * dx + dy * dy);
-                            
+
                             if (distance < maxDistance) {
                                 const opacity = (1 - distance / maxDistance) * 0.5;
                                 ctx.strokeStyle = `rgba(6, 182, 212, ${opacity})`;
@@ -2580,20 +2596,20 @@
                             }
                         }
                     }
-                    
+
                     requestAnimationFrame(drawConnections);
                 }
-                
+
                 // Create fewer initial particles (15 instead of 30)
                 for (let i = 0; i < 15; i++) {
                     createParticle();
                 }
-                
+
                 // Create new particles less frequently (every 1.5 seconds)
                 setInterval(() => {
                     createParticle();
                 }, 1500);
-                
+
                 // Start drawing connections
                 drawConnections();
             }
@@ -2794,7 +2810,7 @@
 
         // Enhanced Parallax effect for hero section
         let ticking = false;
-        
+
         window.addEventListener('scroll', () => {
             if (!ticking) {
                 window.requestAnimationFrame(() => {
@@ -2802,52 +2818,52 @@
                     const heroBg = document.querySelector('.hero-bg');
                     const heroContent = document.querySelector('.hero-content');
                     const heroStats = document.querySelector('.hero-stats');
-                    
+
                     if (heroBg) {
                         // Background moves slower (parallax effect)
                         heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
                     }
-                    
+
                     if (heroContent) {
                         // Content moves at normal speed but with slight scale
                         const scale = Math.max(1 - scrolled * 0.0003, 0.9);
                         heroContent.style.transform = `translateY(${scrolled * 0.2}px) scale(${scale})`;
                         heroContent.style.opacity = Math.max(1 - scrolled * 0.002, 0);
                     }
-                    
+
                     if (heroStats) {
                         // Stats move slightly faster for depth
                         heroStats.style.transform = `translateY(${scrolled * -0.15}px)`;
                     }
-                    
+
                     // Parallax effect for services section
                     const servicesSection = document.querySelector('.services');
                     const serviceCards = document.querySelectorAll('.service-card');
                     const featuredHero = document.querySelector('.featured-hero');
-                    
+
                     if (servicesSection) {
                         const servicesSectionTop = servicesSection.offsetTop;
                         const servicesSectionHeight = servicesSection.offsetHeight;
                         const windowHeight = window.innerHeight;
-                        
+
                         // Check if services section is in viewport
                         if (scrolled + windowHeight > servicesSectionTop && scrolled < servicesSectionTop + servicesSectionHeight) {
                             const relativeScroll = scrolled - servicesSectionTop + windowHeight;
                             const parallaxAmount = relativeScroll * 0.3;
-                            
+
                             // Move background slower
                             const servicesBg = servicesSection.querySelector('.services::before');
                             if (servicesSection) {
                                 servicesSection.style.backgroundPosition = `center ${parallaxAmount}px`;
                             }
-                            
+
                             // Animate featured hero card
                             if (featuredHero) {
                                 const heroProgress = Math.min((relativeScroll / windowHeight) * 1.5, 1);
                                 featuredHero.style.transform = `translateY(${(1 - heroProgress) * 50}px)`;
                                 featuredHero.style.opacity = heroProgress;
                             }
-                            
+
                             // Stagger animation for service cards
                             serviceCards.forEach((card, index) => {
                                 const cardProgress = Math.min(((relativeScroll - (index * 50)) / windowHeight) * 1.5, 1);
@@ -2858,7 +2874,7 @@
                             });
                         }
                     }
-                    
+
                     ticking = false;
                 });
                 ticking = true;
