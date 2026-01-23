@@ -917,6 +917,13 @@
         }
 
         @media (max-width: 768px) {
+            .hero {
+                align-items: flex-start;
+                min-height: 100svh;
+                padding-top: 7rem;
+                padding-bottom: 4rem;
+            }
+
             .hero-title {
                 font-size: 2.5rem;
             }
@@ -1973,6 +1980,10 @@
                 flex-direction: column;
             }
 
+            .scroll-indicator {
+                display: none;
+            }
+
             .nav-links {
                 display: none;
             }
@@ -1995,6 +2006,10 @@
 
             .cta-buttons {
                 flex-direction: column;
+            }
+
+            .cta-content {
+                padding: var(--spacing-sm);
             }
 
             .cta-form {
